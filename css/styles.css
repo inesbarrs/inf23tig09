@@ -1,47 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
-    color: #333;
+    font-family: Arial, sans-serif;
+    color: #5e5b5b;
     background-color: #f4f4f4;
 }
 
-.navbar {
-    background-color: #9a7c5a;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #af897b;
+    margin-top: -20px;
+    padding: 10px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
+header > nav {
+    display: flex;
+    column-gap: 30px;
 }
 
 nav a {
-    color: #b88962;
-    margin: 0 1rem;
+    color: #ccc4ba;
     text-decoration: none;
 }
 
 main {
     padding: 2rem;
+    flex: 1;
 }
 
 .intro-cards {
     margin: 2rem 0;
 }
 
-.hero {
-    background: url('fitness.jpg') no-repeat center center/cover;
-    color: #d0a774;
-    padding: 5rem 0;
+.home-text {
+    color: #b1a89e;
     text-align: center;
-}
-
-section > ul{
-    background-color: red;
-    display: none;
 }
 
 #home_title{
@@ -50,6 +47,23 @@ section > ul{
 
 .features, .about, .services, .contact {
     margin: 2rem 0;
+}
+
+.about {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+table {
+    background-color: #e7e0e0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.features > ul {
+    background-color: #e7e0e0;
+    border-radius: 5px;
+    padding: 20px
 }
 
 .cards-container {
@@ -108,10 +122,12 @@ form label {
 form input, form textarea {
     padding: 0.5rem;
     margin-top: 0.5rem;
+    border: none;
+    text-align: center;
 }
 
 form button {
-    background-color: #f0bf85;
+    background-color: #ccc4ba;
     color: #fff;
     padding: 0.7rem;
     border: none;
@@ -120,5 +136,9 @@ form button {
 }
 
 form button:hover {
-    background-color: #ff4500;
+    background-color: #af897b;
+}
+
+.contact > h2 {
+    text-align: center;
 }
