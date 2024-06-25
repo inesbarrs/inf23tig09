@@ -62,6 +62,12 @@ main {
     margin: 2rem 0;
 }
 
+#scr-image {
+    content: "";
+    background-image: url("../img/fitness.jpg");
+    
+}
+
 /* CARDS PREÇOS */
 
 .pricing-cards {
@@ -78,7 +84,7 @@ main {
     margin: 0.5px;
     padding: 2rem;
     width: 300px;
-    width: calc(40% - 1rem); /* Definir a largura para que se ajustem melhor */
+    width: calc(40% - 1rem); /* Definir a largura para ajustar melhor */
     text-align: center;
     transition: transform 0.2s;
 }
@@ -215,7 +221,7 @@ tbody tr:hover {
     line-height: 85%;
     flex: 1;
     padding: 20px;
-    background-color: #b9c7c4; /* Cor de fundo para o lado direito */
+    background-color: #b9c7c4; /* Cor de fundo lado direito */
 }
 
 .features {
@@ -261,8 +267,7 @@ table {
 
 .cards-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .card {
@@ -328,12 +333,12 @@ form input, form textarea {
     margin-top: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    text-align: left; /* Alinhamento à esquerda */
+    text-align: left;
     width: calc(100% - 1rem); /* Ajustar a largura para caber no container */
 }
 
 form textarea {
-    height: 100px; /* Ajuste a altura da textarea conforme necessário */
+    height: 100px; /* altura da textarea */
 }
 
 form button {
@@ -373,63 +378,6 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
-
-/* Media Queries */
-
-/* Portáteis Pequenos (1024px e abaixo) */
-@media (max-width: 1024px) {
-    header > nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .left-side, .right-side {
-        padding: 10px;
-    }
-
-    .right-side {
-        font-size: 40px;
-    }
-
-    table, th, td {
-        font-size: 14px;
-    }
-}
-
-/* Tablets (768px e abaixo) */
-@media (max-width: 768px) {
-    header > nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .left-side, .right-side {
-        padding: 10px;
-    }
-
-    .right-side {
-        font-size: 35px;
-    }
-
-    table, th, td {
-        font-size: 12px;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    .features li:before {
-        left: -0.8em;
-    }
 
 
 /* Base Styles */
@@ -496,12 +444,6 @@ main {
     margin: 2rem 0;
 }
 
-.cards-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .card {
     background-color: #fff;
     border-radius: 10px;
@@ -535,17 +477,62 @@ main {
 
 /* Media Queries */
 
-/* Portáteis pequenos (768px e abaixo) */
+/* Media Queries */
+
+/* Portáteis Pequenos (1024px e abaixo) */
+@media (max-width: 1024px) {
+    /*header > nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    */
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        padding: 10px;
+    }
+
+    .right-side {
+        font-size: 40px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
+
+/* Tablets (768px e abaixo) */
 @media (max-width: 768px) {
-    .cards-container {
+    header > nav {
         flex-direction: column;
         align-items: center;
     }
 
-    .card {
-        width: calc(100% - 2rem); /* Leva em consideração a margem de 1rem */
+    .container {
+        flex-direction: column;
     }
-}
 
+    .left-side, .right-side {
+        padding: 10px;
+    }
+
+    .right-side {
+        font-size: 35px;
+    }
+
+    table, th, td {
+        font-size: 12px;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .features li:before {
+        left: -0.8em;
+    }
 
 }
