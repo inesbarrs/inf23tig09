@@ -16,6 +16,6 @@ A FIT FUSION é uma plataforma fitness do ginásio da equipa FIT FUSION para inc
 
 > 4. Apresentação
 
-***
+---
 
 Trabalho efetuado por: A036343 Inês Sousa.
