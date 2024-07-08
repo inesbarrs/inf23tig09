@@ -8,7 +8,7 @@ A FIT FUSION é uma plataforma fitness do ginásio da equipa FIT FUSION para inc
 
 ## RELATÓRIO
 
-> 1. Apresentação do projeto
+> 1. **[Apresentação do projeto](https://eff.org)**
 
 > 2. Interface do Utilizador
 
