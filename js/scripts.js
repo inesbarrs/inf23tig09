@@ -1,33 +1,25 @@
-const form = document.getElementById('contact-form');
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contact-form");
+    const successMessage = document.getElementById("success-message");
 
-if (form) {
+    // Limpar o formulário e esconder a mensagem de sucesso ao carregar a página
+    form.reset();
+    successMessage.classList.add("hidden");
+    form.classList.remove("hidden");
 
-    const successMessage = document.getElementById('success-message');
-
-    const subtmitButton = document.getElementById('submitButton');
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Impede o envio real do formulário
-
-        // Exibe a mensagem de sucesso
-        successMessage.classList.remove('hidden');
-
-        subtmitButton.disabled = true;
-
-        // Limpa os campos do formulário
-        form.reset();
-
-        // Oculta a mensagem e botao
-        setTimeout(() => {
-            subtmitButton.disabled = false;
-
-            successMessage.classList.add('hidden'); 
-        }, 5000); // 5000 ms = 5 segundos
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        // Ocultar o formulário
+        form.classList.add("hidden");
+        
+        // Mostrar a mensagem de sucesso
+        successMessage.classList.remove("hidden");
     });
-}
+});
 
 
-// JSCRIPT
+// Click na imagem - alert
 const img = document.getElementById('cardio2');
 
 if (img) {
@@ -37,6 +29,8 @@ img.addEventListener('click', function () {
 });
 };
 
+
+// Titulo altera de tamanho ao passar o rato
 const sobre = document.getElementById('sobre');
 
 if (sobre) {

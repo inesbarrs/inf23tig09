@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plataformaFitness>
+    <planos>
+        <plano>
+            <nome>Plano Básico</nome>
+            <preco moeda="EUR">25</preco>
+            <duracao>Mensal</duracao>
+            <beneficios>
+                <beneficio>Acesso ao ginásio</beneficio>
+                <beneficio>Aulas em grupo</beneficio>
+                <beneficio>1 Avaliação física</beneficio>
+            </beneficios>
+        </plano>
+        <plano>
+            <nome>Plano Pro</nome>
+            <preco moeda="EUR">35</preco>
+            <duracao>Mensal</duracao>
+            <beneficios>
+                <beneficio>Acesso ao ginásio</beneficio>
+                <beneficio>Aulas em grupo</beneficio>
+                <beneficio>Avaliações física com regularidade</beneficio>
+                <beneficio>Acesso a um personal trainer</beneficio>
+            </beneficios>
+        </plano>
+    </planos>
+    <aulas>
+        <aula>
+            <nome>Yoga</nome>
+            <descricao>Classe de Yoga para todos os níveis</descricao>
+            <duracao>60</duracao>
+        </aula>
+        <aula>
+            <nome>Pilates</nome>
+            <descricao>Classe de Pilates para fortalecer o core</descricao>
+            <duracao>50</duracao>
+        </aula>
+    </aulas>
+</plataformaFitness>

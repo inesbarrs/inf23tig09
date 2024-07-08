@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="plataformaFitness">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="planos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="plano" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nome" type="xs:string"/>
+                                        <xs:element name="preco">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:decimal">
+                                                        <xs:attribute name="moeda" type="xs:string" use="required"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="duracao" type="xs:string"/>
+                                        <xs:element name="beneficios">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="beneficio" type="xs:string" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="aulas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="aula" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nome" type="xs:string"/>
+                                        <xs:element name="descricao" type="xs:string"/>
+                                        <xs:element name="duracao" type="xs:int"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
