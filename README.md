@@ -18,7 +18,7 @@ A FIT FUSION é uma plataforma fitness do ginásio da equipa FIT FUSION para inc
 
 > 2. **[Interface do Utilizador](https://github.com/inesbarrs/inf23tig09/blob/master/doc/c2.md)**
 
-> 3. **[Interface do Produto](https://github.com/inesbarrs/inf23tig09/blob/master/doc/c3.md)**
+> 3. **[Produto](https://github.com/inesbarrs/inf23tig09/blob/master/doc/c3.md)**
 
 > 4. **[Apresentação](https://github.com/inesbarrs/inf23tig09/blob/master/doc/c4.md)**
 
