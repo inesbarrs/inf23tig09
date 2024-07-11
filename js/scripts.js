@@ -1,3 +1,4 @@
+// Função responsável por gerar mensagem sucesso e esconder a mensagem quando não necessário
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("contact-form");
     const successMessage = document.getElementById("success-message");
@@ -7,10 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
     successMessage.classList.add("hidden");
     form.classList.remove("hidden");
 
+    // Depois de fazer submit
     form.addEventListener("submit", function(event) {
         event.preventDefault();
         
-        // Ocultar o formulário
+        // Ocultar o formulário depois da mensagem enviada
         form.classList.add("hidden");
         
         // Mostrar a mensagem de sucesso

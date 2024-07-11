@@ -1,5 +1,6 @@
 /* BASE STYLE */
 
+/* Body principal */
 body {
     display: flex;
     flex-direction: column;
@@ -10,6 +11,7 @@ body {
     background-color: #f0f0f0;
 }
 
+/* Header */
 header {
     display: flex;
     flex-direction: column;
@@ -71,6 +73,7 @@ nav a:hover::after {
     text-align: center;
 }
 
+/* Section dos cards */
 .pricing-cards {
     display: flex;
     justify-content: space-around;
@@ -78,6 +81,7 @@ nav a:hover::after {
     margin: 2rem 0;
 }
 
+/* Estilo de cada card */
 .pricing-card {
     background-color: #fff;
     border-radius: 10px;
@@ -90,16 +94,19 @@ nav a:hover::after {
     transition: transform 0.2s;
 }
 
+/* hover dos cards ao passar por cima */
 .pricing-card:hover {
     transform: scale(1.05);
 }
 
+/* Tipo de plano - titulo */
 .pricing-card h3 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
     color: #333;
 }
 
+/* Preço */
 .price {
     display: flex;
     justify-content: center;
@@ -108,16 +115,19 @@ nav a:hover::after {
     margin-bottom: 1rem;
 }
 
+/* Preço e tipo de moeada */
 .price .currency {
     font-size: 1.5rem;
     vertical-align: super;
 }
 
+/* Preço e o mês */
 .price .period {
     font-size: 1rem;
     color: #666;
 }
 
+/* Lista dentro do card */
 .pricing-card ul {
     list-style: none;
     padding: 0;
@@ -125,12 +135,14 @@ nav a:hover::after {
     text-align: left;
 }
 
+/* Elemento de cada lista dentro do card */
 .pricing-card ul li {
     margin-bottom: 0.5rem;
     padding-left: 1.5rem;
     position: relative;
 }
 
+/* Elemento de cada lista dentro do card */
 .pricing-card ul li:before {
     content: '✓';
     position: absolute;
@@ -138,6 +150,7 @@ nav a:hover::after {
     color: #af897b;
 }
 
+/* Botão assinar */
 .signup-btn {
     background-color: #0c7c6a;
     color: #fff;
@@ -151,10 +164,6 @@ nav a:hover::after {
 
 .signup-btn:hover {
     background-color: #6ba191;
-}
-
-.intro-cards {
-    margin: 2rem 0;
 }
 
 /* 2. ABOUT */
@@ -180,14 +189,6 @@ th, td {
 th {
     background-color: #5f968d;
     color: white;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tbody tr:hover {
-    background-color: #f1f1f1;
 }
 
 .container {
@@ -219,6 +220,7 @@ tbody tr:hover {
     text-align: left;
 }
 
+/* Elemento escondido */
 .features2 {
     display: none;
 }
@@ -290,7 +292,6 @@ tbody tr:hover {
     margin: 2rem 0;
 }
 
-
 /* 4. CONTACTO - FORMULÁRIO */
 
 .contact .form-container {
@@ -312,10 +313,12 @@ form {
     width: 100%;
 }
 
+/* Cada linha do formulario*/
 form label {
     margin-top: 1rem;
 }
 
+/* Area e input do formulario */
 form input, form textarea {
     padding: 0.5rem;
     margin-top: 0.5rem;
@@ -329,6 +332,7 @@ form textarea {
     height: 100px; /* altura da textarea */
 }
 
+/* Botao do form */
 form button {
     background-color: #0c7c6a;
     color: #fff;
@@ -348,10 +352,12 @@ form button:hover {
     margin-bottom: 1rem;
 }
 
+/* Mensagem escondida */
 .hidden {
     display: none;
 }
 
+/* Mensagem sucesso */
 #success-message {
     color: rgb(116, 180, 161);
     font-weight: bold;
@@ -372,10 +378,12 @@ footer {
 
 @media (max-width: 1024px) {
 
+    /* Container do ABOUT */
     .container {
         flex-direction: column;
     }
 
+    /* Lado esquerdo e direito do container do ABOUT */
     .left-side, .right-side {
         padding: 10px;
     }
@@ -384,6 +392,7 @@ footer {
         font-size: 40px;
     }
 
+    /* Tabela no ABOUT */
     table, th, td {
         font-size: 14px;
     }
@@ -392,15 +401,18 @@ footer {
 /* Tablets (768px e abaixo) */
 
 @media (max-width: 768px) {
+    /* Nav bar */
     header > nav {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Container do ABOUT */
     .container {
         flex-direction: column;
     }
 
+    /* Lado esquerdo e direito do container do ABOUT */
     .left-side, .right-side {
         padding: 10px;
     }
@@ -409,6 +421,7 @@ footer {
         font-size: 35px;
     }
 
+    /* Tabela no ABOUT */
     table, th, td {
         font-size: 12px;
     }
@@ -417,6 +430,7 @@ footer {
         padding: 1rem;
     }
 
+    /* Texto e descrição no ABOUT */
     .features li:before {
         left: -0.8em;
     }
